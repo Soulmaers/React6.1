@@ -1,38 +1,58 @@
 .App {
   text-align: center;
+  width: 500px;
+  margin: 0 auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.watch {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-flow: row;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
+.watch_input {
+  display: flex;
+  flex-flow: column;
+  margin-right: 10px;
+  align-items: start;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.watch_title {
+  font-size: 14px;
+  margin: 10px;
+}
+.watch_value {
+  box-sizing: border-box;
+  height: 50px;
+  width: 200px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  color: rgb(83, 91, 105);
+  padding: 10px;
+}
+.watch_add {
+  height: 50px;
+  margin-top: auto;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+.watch_list {
+  width: 500px;
+}
+.watch_item {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.item_title {
+  margin-right: 10px;
+  align-items: start;
+  width: 200px;
+}
+.item_time {
+  margin-right: 10px;
+  align-items: start;
+  width: 200px;
+}
+.item_remove {
+  border: 0px;
+  background: white;
+  width: 70px;
 }
